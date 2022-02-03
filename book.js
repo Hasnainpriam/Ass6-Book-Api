@@ -7,6 +7,7 @@ const searchBook = () =>{
  
   if(inputField.value === ''){
     loading('error1','block');
+    loading('error2','none');
   }
   else{
   const url=`https://openlibrary.org/search.json?q=${inputValue}`
@@ -16,6 +17,7 @@ const searchBook = () =>{
        loading('spinner','block');
        loading('error1','none');
        loading('error2','none');
+       
   }
   inputField.value='';
   
